@@ -8,7 +8,7 @@
 
  In depth we are:
 
-  - Building a Web 3.0 Application with __Next JS__.
+  - Building a Web 3.0 Application with __Next.js__.
 
   - Creating, auditing and deploying our smart contract using __Solidity__.
 
@@ -66,8 +66,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```
 - Next.js
 - Tailwind
-- Javascript
-- Typescript
+- JavaScript
+- TypeScript
 - Solidity
 - Sanity
 - Ethers
