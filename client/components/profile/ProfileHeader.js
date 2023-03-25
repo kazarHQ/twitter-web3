@@ -100,9 +100,9 @@ const ProfileHeader = () => {
       </div>
       <div className={style.nav}>
         <div className={style.activeNav}>Tweets</div>
-        <div>Tweets & Replies</div>
+        {/* <div>Tweets & Replies</div>
         <div>Media</div>
-        <div>Likes</div>
+        <div>Likes</div> */}
       </div>
     </div>
   )

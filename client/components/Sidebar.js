@@ -54,43 +54,12 @@ function Sidebar({ initialSelectedIcon }) {
           redirect={'/'}
         />
         <SidebarOption
-          Icon={selected === 'Explore' ? FaHashtag : BiHash}
-          text='Explore'
-          isActive={Boolean(selected === 'Explore')}
-          setSelected={setSelected}
-        />
-        <SidebarOption
-          Icon={selected === 'Notifications' ? FaBell : FiBell}
-          text='Notifications'
-          isActive={Boolean(selected === 'Notifications')}
-          setSelected={setSelected}
-        />
-        <SidebarOption
-          Icon={selected === 'Messages' ? HiMail : HiOutlineMail}
-          text='Messages'
-          isActive={Boolean(selected === 'Messages')}
-          setSelected={setSelected}
-        />
-        <SidebarOption
-          Icon={selected === 'Bookmarks' ? BsBookmarkFill : BsBookmark}
-          text='Bookmarks'
-          isActive={Boolean(selected === 'Bookmarks')}
-          setSelected={setSelected}
-        />
-        <SidebarOption
-          Icon={selected === 'Lists' ? RiFileList2Fill : FaRegListAlt}
-          text='Lists'
-          isActive={Boolean(selected === 'Lists')}
-          setSelected={setSelected}
-        />
-        <SidebarOption
           Icon={selected === 'Profile' ? BsPersonFill : BsPerson}
           text='Profile'
           isActive={Boolean(selected === 'Profile')}
           setSelected={setSelected}
           redirect={'/profile'}
         />
-        <SidebarOption Icon={CgMoreO} text='More' />
         <div
           onClick={() =>
             router.push(`${router.pathname}/?mint=${currentAccount}`)

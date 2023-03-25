@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { BsCardImage, BsEmojiSmile } from 'react-icons/bs'
 import { RiFileGifLine, RiBarChartHorizontalFill } from 'react-icons/ri'
 import { IoMdCalendar } from 'react-icons/io'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { client } from '../../lib/client'
-import { useContext } from 'react'
 import { TwitterContext } from '../../context/TwitterContext'
 
 const style = {
@@ -23,6 +22,7 @@ const style = {
 
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState('')
+  const [isPosting, setIsPosting] = useState(false)
   const { currentAccount, currentUser, tweets } = useContext(TwitterContext)
 
   const postTweet = async (event) => {
@@ -43,6 +43,7 @@ const TweetBox = () => {
       },
     }
 
+    setIsPosting(true)
     await client.createIfNotExists(tweetDoc)
 
     await client
@@ -57,7 +58,9 @@ const TweetBox = () => {
       ])
       .commit()
 
+    setIsPosting(false)
     setTweetMessage('')
+    window.location.reload()
   }
 
   return (
@@ -92,13 +95,13 @@ const TweetBox = () => {
             </div>
             <button
               type="submit"
-              disabled={!tweetMessage}
+              disabled={!tweetMessage || isPosting}
               onClick={(event) => postTweet(event)}
               className={`${style.submitGeneral} ${
                 tweetMessage ? style.activeSubmit : style.inactiveSubmit
               }`}
             >
-              Tweet
+              {isPosting ? 'Posting...' : 'Tweet'}
             </button>
           </div>
         </form>
