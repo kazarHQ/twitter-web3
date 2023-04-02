@@ -1,28 +1,24 @@
- ## twitter-web3
+## twitter-web3
 
  <img src="/client/assets/twitter-profile.png" alt="frontend" title="Optional title">
 
- A twitter decentralized application (dapp) where users can upload posts to the __network__ as well as mint their own profile image as __NFT__.
- 
- NFT images have a unique hexagon shape.
+A twitter decentralized application (dapp) where users can upload posts to the **network** as well as mint their own profile image as **NFT**.
 
- In depth we are:
+NFT images have a unique hexagon shape.
 
-  - Building a Web 3.0 Application with __Next.js__.
+In depth we are:
 
-  - Creating, auditing and deploying our smart contract using __Solidity__.
+- Building a Web 3.0 Application with **Next.js**.
 
-  - Styling our app with __Tailwind CSS__.
+- Creating, auditing and deploying our smart contract using **Solidity**.
 
-  - Adding __Web 3.0__ authentication using __MetaMask__.
+- Styling our app with **Tailwind CSS**.
 
-  - Storing the tweets in __Sanity.io__.
+- Adding **Web 3.0** authentication using **MetaMask**.
 
-  - __Mint__ our own __NFT profile picture__ and store it on __Pinata__.
+- **Mint** our own **NFT profile picture** and store it on **Pinata**.
 
-  - Deploy and host the app on __Vercel__. 
-
-
+- Deploy and host the app on **Vercel**.
 
 ## Getting Started
 
@@ -32,7 +28,7 @@ First, navigate to the folder where your project will exist:
 cd <folder_name>
 ```
 
-Then, clone to the project by using the following command: 
+Then, clone to the project by using the following command:
 
 ```
 git clone https://github.com/chrisstef/twitter-web3
@@ -50,7 +46,6 @@ Install dependencies:
 npm install
 ```
 
-
 Run the development server:
 
 ```
@@ -58,8 +53,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
 
 ## Stack Used 💻
 
@@ -74,14 +67,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Metamask
 - Pinata
 ```
-
-
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
